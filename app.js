@@ -32,6 +32,22 @@ App({
         }
       }
     })
+    //获取用户地理位置
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userLocationBackground']) {
+          wx.startLocationUpdateBackground({
+            success: res => {
+              wx.onLocationChange({
+                success: res => {
+                  console.log(res)
+                }
+              })
+            }
+          })
+        }
+      }
+    })
   },
   globalData: {
     userInfo: null

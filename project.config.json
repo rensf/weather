@@ -13,7 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.9.0",
 	"appid": "wx12e68d58805f9c32",
 	"projectname": "weather",
 	"debugOptions": {
